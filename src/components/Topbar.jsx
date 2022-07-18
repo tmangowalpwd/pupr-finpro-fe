@@ -9,7 +9,7 @@ const Topbar = () => {
                 w="25%"
                 src={logo}
                 alt=""
-                marginLeft="30px"
+                marginLeft="15px"
             />
         </Flex>
     );
