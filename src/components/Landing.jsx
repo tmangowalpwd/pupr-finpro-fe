@@ -4,6 +4,7 @@ import Perumahan from "./Perumahan";
 import Bendungan from "./Bendungan";
 import Apbn from "./Apbn";
 import Sdm from "./Sdm";
+import Topbar from "./Topbar";
 import mainBg from "../img/bg-main.png";
 
 const Landing = () => {
@@ -12,6 +13,7 @@ const Landing = () => {
     const title = "Bakti PUPR Sigap Membangun Negeri";
     return (
         <div>
+            <Topbar />
             <Hero image={mainBg} title={title} description={description} />
             <br />
             <br />
