@@ -12,7 +12,7 @@ import {
 
 const Hero = (props) => {
     return (
-        <Flex color="white" marginTop="79" h="653px">
+        <Flex color="white" h="653px">
             <Box flex="1" bg="#1A365D" flexDirection="column">
                 <Box
                     flex="1"
