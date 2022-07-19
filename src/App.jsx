@@ -7,6 +7,7 @@ import PerumahanSection from "./pages/PerumahanSection";
 import SDASection from "./pages/SDASection";
 import APBNSection from "./pages/APBNSection";
 import SDMSection from "./pages/SDMSection";
+import "./App.css";
 
 const App = () => {
   return (
@@ -26,3 +27,4 @@ const App = () => {
 };
 
 export default App;
+
