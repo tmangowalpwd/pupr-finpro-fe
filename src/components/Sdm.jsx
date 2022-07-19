@@ -1,10 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { useFormik } from "formik";
-import * as Yup from "yup";
-import { Link } from "react-router-dom";
 import sdmIcon from "../img/sdm.png";
-import sdmBg from "../img/bg-sdm.png";
 import { Button, Heading, Box, Image, Flex, Text } from "@chakra-ui/react";
 import { API_URL } from "../constants/API";
 
@@ -34,7 +30,7 @@ const Sdm = () => {
     try {
       const response = await axios.get(`${API_URL}/section/banner`, {
         params: {
-          id: 3,
+          id: 4,
         },
       });
 
@@ -86,94 +82,32 @@ const Sdm = () => {
           paddingLeft="70px"
           flexWrap="wrap"
         >
-          <Box
-            display="flex"
-            flexDirection="column"
-            justifyItems="center"
-            paddingTop={2}
-            paddingLeft={6}
-            justifyContent="center"
-            bg="white"
-            border="1px"
-            borderRadius="16px"
-            borderColor="gray.200"
-            w="274px"
-            h="90px"
-            zIndex={1}
-            marginRight={5}
-            mt={5}
-          >
-            <Text fontSize="12px">Jumlah Ruas</Text>
-            <Text fontSize="24px" fontWeight="bold">
-              40 Ruas
-            </Text>
-          </Box>
-          <Box
-            display="flex"
-            flexDirection="column"
-            justifyItems="center"
-            paddingTop={2}
-            paddingLeft={6}
-            justifyContent="center"
-            bg="white"
-            border="1px"
-            borderRadius="16px"
-            borderColor="gray.200"
-            w="274px"
-            h="90px"
-            zIndex={1}
-            marginRight={5}
-            mt={5}
-          >
-            <Text fontSize="12px">Panjang Jalan</Text>
-            <Text fontSize="24px" fontWeight="bold">
-              600 Km
-            </Text>
-          </Box>
-          <Box
-            display="flex"
-            flexDirection="column"
-            justifyItems="center"
-            paddingTop={2}
-            paddingLeft={6}
-            justifyContent="center"
-            bg="white"
-            border="1px"
-            borderRadius="16px"
-            borderColor="gray.200"
-            w="274px"
-            h="90px"
-            zIndex={1}
-            marginRight={5}
-            mt={5}
-          >
-            <Text fontSize="12px">Rata-rata Nilai Jalan</Text>
-            <Text fontSize="24px" fontWeight="bold">
-              3.73
-            </Text>
-          </Box>
-          <Box
-            display="flex"
-            flexDirection="column"
-            justifyItems="center"
-            paddingTop={2}
-            paddingLeft={6}
-            justifyContent="center"
-            bg="white"
-            border="1px"
-            borderRadius="16px"
-            borderColor="gray.200"
-            w="274px"
-            h="90px"
-            zIndex={1}
-            marginRight={5}
-            mt={5}
-          >
-            <Text fontSize="12px">Rata-rata Nilai VCR</Text>
-            <Text fontSize="24px" fontWeight="bold">
-              0.1842
-            </Text>
-          </Box>
+          {sdm.map((val) => {
+            return (
+              <Box
+                display="flex"
+                flexDirection="column"
+                justifyItems="center"
+                paddingTop={2}
+                paddingLeft={6}
+                justifyContent="center"
+                bg="white"
+                border="1px"
+                borderRadius="16px"
+                borderColor="gray.200"
+                w="274px"
+                h="90px"
+                zIndex={1}
+                marginRight={5}
+                mt={5}
+              >
+                <Text fontSize="12px">{val.title}</Text>
+                <Text fontSize="24px" fontWeight="bold">
+                  {val.data_number} {val.data_unit}
+                </Text>
+              </Box>
+            );
+          })}
         </Flex>
       </Flex>
       <Box w="50vw" zIndex={-1}>
@@ -194,3 +128,4 @@ const Sdm = () => {
 };
 
 export default Sdm;
+

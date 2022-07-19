@@ -10,7 +10,7 @@ const Perumahan = () => {
   const [sectionData, setSectionData] = useState({
     banner_title: "",
     banner_image: "",
-    banner_caption: ""
+    banner_caption: "",
   });
 
   const fetchDataPerumahan = async (req, res) => {
@@ -35,7 +35,7 @@ const Perumahan = () => {
         },
       });
 
-      console.log(response.data)
+      console.log(response.data);
       setSectionData(response.data);
     } catch (err) {
       console.log(err);
@@ -130,3 +130,4 @@ const Perumahan = () => {
 };
 
 export default Perumahan;
+
