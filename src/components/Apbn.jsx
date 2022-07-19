@@ -75,7 +75,17 @@ const Apbn = () => {
                     <Text color="black" mt={5}>
                         {sectionData.banner_caption}
                     </Text>
-                    <Button colorScheme="teal" mt={5} alignSelf="start">
+                    <Button
+                        onClick={() =>
+                            window.open(
+                                "https://public.tableau.com/views/NeracaE-Monitoring_16445883684600/Home?:language=en-US&:display_count=n&:origin=viz_share_link"
+                            )
+                        }
+                        colorScheme="teal"
+                        mt={5}
+                        alignSelf="start"
+                    >
+
                         Lihat Data
                     </Button>
                 </Flex>
