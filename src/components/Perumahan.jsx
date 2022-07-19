@@ -75,7 +75,7 @@ const Perumahan = () => {
                     <Button
                         onClick={() =>
                             window.open(
-                                "https://public.tableau.com/views/CapaianPSRdanBacklogPerumahan/PSRdanBacklogRumah2020?:language=en-US&:display_count=n&:origin=viz_share_link"
+                                "https://public.tableau.com/views/NeracaInfrastrukturPerumahan/RumahSusun?:language=en-US&:embed=y&:embed_code_version=3&:loadOrderID=0&:display_count=y&:origin=viz_share_link"
                             )
                         }
                         colorScheme="teal"
