@@ -2,17 +2,17 @@ import { Box, Flex, Text, Button, Image } from "@chakra-ui/react";
 
 const Hero = (props) => {
     return (
-        <Flex color="white" h="653px">
+        <Flex color="white" h="768px">
             <Box flex="1" bg="#1A365D" flexDirection="column">
                 <Box
+                    display="flex"
                     flex="1"
                     flexDirection="column"
                     w="492"
-                    h="90"
-                    marginTop="213"
-                    marginRight="58"
-                    marginBottom="30"
-                    marginLeft="200"
+                    h="100%"
+                    justifyContent="center"
+                    alignItems="start"
+                    padding="150px"
                 >
                     <Text fontSize="32px" fontWeight="700" lineHeight="45px">
                         {props.title}

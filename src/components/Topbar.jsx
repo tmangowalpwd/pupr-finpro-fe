@@ -3,7 +3,7 @@ import { Image, Flex } from "@chakra-ui/react";
 
 const Topbar = () => {
     return (
-        <Flex h="80px" alignItems="center">
+        <Flex h="100px" alignItems="center">
             <Image
                 objectFit="cover"
                 w="25%"
