@@ -75,7 +75,16 @@ const Bendungan = () => {
                     <Text color="black" mt={5}>
                         {sectionData.banner_caption}
                     </Text>
-                    <Button colorScheme="teal" mt={5} alignSelf="start">
+                    <Button
+                        onClick={() =>
+                            window.open(
+                                "https://public.tableau.com/shared/K7YXTX4XB?:display_count=y&:origin=viz_share_link&:embed=y"
+                            )
+                        }
+                        colorScheme="teal"
+                        mt={5}
+                        alignSelf="start"
+                    >
                         Lihat Data
                     </Button>
                 </Flex>
