@@ -71,7 +71,16 @@ const Sdm = () => {
           <Text color="black" mt={5}>
             {sectionData.banner_caption}
           </Text>
-          <Button colorScheme="teal" mt={5} alignSelf="start">
+          <Button
+            onClick={() =>
+              window.open(
+                "https://public.tableau.com/app/profile/ahmad.faizal/viz/LaporanBJKW2Palembang-Opsi2/2-DashboardLaporanPembinaan"
+              )
+            }
+            colorScheme="teal"
+            mt={5}
+            alignSelf="start"
+          >
             Lihat Data
           </Button>
         </Flex>
